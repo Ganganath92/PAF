@@ -40,7 +40,7 @@ public class ProjectManagement {
 			// create a prepared statement
 			//LocalDate date = LocalDate.now();
 			//LocalTime time = LocalTime.now();
-			String query = "insert into funder(project_category,project_name,short_des,price,date,project_goal,long_des) values (?, ?, ?, ?, ?, ?, ?)";
+			String query = "insert into project(project_category,project_name,short_des,price,date,project_goal,long_des) values (?, ?, ?, ?, ?, ?, ?)";
 			PreparedStatement preparedStmt = con.prepareStatement(query);
 
 			// binding values
